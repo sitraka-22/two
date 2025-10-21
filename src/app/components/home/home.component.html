@@ -1,0 +1,24 @@
+<!-- Menu en ligne au centre -->
+<nav class="menu">
+  <a href="#">Accueil</a>
+  <a href="#">À propos</a>
+  <a href="#">Contact</a>
+</nav>
+
+<!-- Formulaire de login -->
+<div class="login-form">
+  <h2>Connexion</h2>
+  <form (ngSubmit)="login()">
+    <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required>
+    <input type="password" [(ngModel)]="password" name="password" placeholder="Mot de passe" required>
+    <button type="submit">Se connecter</button>
+  </form>
+</div>
+
+<!-- Petites fenêtres empilées -->
+<div class="cards">
+  <div class="card" *ngFor="let card of cards">
+    <h3>{{ card.title }}</h3>
+    <p>{{ card.content }}</p>
+  </div>
+</div>

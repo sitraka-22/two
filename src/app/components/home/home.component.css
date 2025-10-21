@@ -1,0 +1,27 @@
+.menu { text-align: center; margin-top: 20px; }
+.menu a { margin: 0 15px; text-decoration: none; font-weight: bold; color: #333; font-size: 1rem; }
+
+.login-form {
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.login-form input, .login-form button { width: 100%; padding: 10px; margin: 10px 0; font-size: 1rem; }
+
+.login-form button { background-color: #007BFF; border: none; color: white; cursor: pointer; }
+.login-form button:hover { background-color: #0056b3; }
+
+.cards { width: 95%; max-width: 800px; margin: 30px auto; box-sizing: border-box; }
+.card { border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; border-radius: 5px; background-color: #f9f9f9; font-size: 0.95rem; }
+
+@media (max-width: 600px) {
+  .menu a { display: block; margin: 10px 0; }
+  .login-form input, .login-form button { font-size: 0.9rem; padding: 8px; }
+  .card { padding: 10px; font-size: 0.9rem; }
+}
+h2 { text-align: center; margin-top: 20px; font-size: 1.5rem; color: #444; }
